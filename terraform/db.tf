@@ -7,8 +7,8 @@ resource "aws_db_instance" "db" {
   storage_type = "gp2"
   name                 = "Contacts"
   identifier = "contactdb"
-  username             = "MasterAdmin"
-  password             = "SkeletonKeyDB"
+  username             = ""
+  password             = ""
   parameter_group_name = "default.mysql5.7"
   skip_final_snapshot  = true
   publicly_accessible = false
