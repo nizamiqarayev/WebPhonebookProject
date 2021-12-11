@@ -29,8 +29,8 @@ resource "aws_db_instance" "db" {
 #   storage_type = "gp2"
 #   name                 = "Contacts"
 #   identifier = "casualpractise"
-#   username             = "MasterAdmin"
-#   password             = "Nizami242001!"
+#   username             = ""
+#   password             = ""
 #   parameter_group_name = "default.mysql5.7"
 #   skip_final_snapshot  = true
 #   publicly_accessible = true
@@ -81,6 +81,3 @@ data "template_file" "config" {
 # }
 
 
-
-#   username             = data.aws_kms_secrets.mysqldata.plaintext["mysqlUser"]
-#   password             = data.aws_kms_secrets.mysqldata.plaintext["mysqlPW"]
